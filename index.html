@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> sexy-asian</title>
+    <style>
+        body {
+            background: rgba(25, 25, 27, .9) url(1.jpg) no-repeat center/cover fixed;
+            margin: 0;
+            min-height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.1rem;
+            font-family: cursive;
+        }
+
+        .para1 {
+            text-align: center;
+            font-size: 30px;
+            color: rgb(255, 0, 0);
+        }
+
+        .para2 {
+            text-align: center;
+            font-size: 30px;
+            color: rgb(255, 0, 0);
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        .books {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .books a {
+            color: white;
+        }
+
+        .card {
+            padding: 1rem 1.5rem;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 0 2px white;
+        }
+
+        .card-set {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid;
+            margin-bottom: 1rem;
+        }
+
+        .card img {
+            display: block;
+            width: 160px;
+            height: 236px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 10px;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            color: blue;
+        }
+
+        .card-title.sm {
+            font-size: 1.35rem;
+        }
+
+        .card-desc>* {
+            margin: 5px;
+            color: rgb(255, 1, 1);
+        }
+
+        .card-desc :first-child {
+            font-weight: bold;
+        }
+
+        .card span:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .header-toggle {
+            display: none;
+            cursor: pointer;
+            background-color: rgba(25, 25, 27, 0.768);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(25, 25, 27, 0.768);
+
+
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 1.3rem;
+            padding-left: 0;
+        }
+
+        header a {
+            padding: .5rem 1rem;
+            border: 1px solid;
+        }
+
+        .search-div input {
+            display: inline-block;
+            padding: .5rem 1rem;
+            font-size: 1.1rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.62);
+        }
+
+        .search-div input:focus {
+            outline: transparent;
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .search-div button {
+            padding: .5rem 1rem;
+            border: none;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            background-color: rgba(17, 1, 1, 0.848);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            background-color: rgba(0, 0, 0, 0.595);
+        }
+
+        footer a {
+            padding: .3rem 0;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </div>
+
+    <!-- header starts here -->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" width="150"></a>
+        </div>
+        <ul>
+            <li style="background-color: rgba(17, 1, 1, 0.848);"><a href="index.html" style="color: gold;">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="search-div">
+            <input type="text" placeholder="search" class="search">
+            <button>Search</button>
+        </div>
+
+        <ul class="login-ul">
+            <li><a href="#" id="btn-login">Login</a></li>
+            <li><a href="#" id="btn-signUp">Sign-Up</a></li>
+        </ul>
+    </header> <!-- header ends here -->
+
+    <p id="para1" class="para1"></p>
+    <p id="para2" class="para2"></p>
+
+    <section class="books">
+        <a href="web%20pic/Ganyu/Ganyu.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="ganyu (1).jpg" alt="Ganyu cow cosplay">
+                    <p class="card-title">Ganyu</p>
+                </div>
+                <div class="card-desc">
+                    <p>Ganyu cow cosplay</p>
+
+                    <p>By - <span title="Ganyu cow">Ganyu</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Nekokoyoshi/Nekokoyoshi (2).html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Nekokoyoshi (14).jpg" alt="Nekokoyoshi cosplay">
+                    <p class="card-title">Nekokoyoshi</p>
+                </div>
+                <div class="card-desc">
+                    <p>Nekokoyoshi cosplay</p>
+
+                    <p>By - <span title="Ganyu cow">Nekokoyoshi</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Nekokoyoshi-Kinako/NEKOKINAKO.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="NEKOKINAKO (26).jpg" alt="Nekokoyoshi cosplay">
+                    <p class="card-title">NEKOKINAKOi</p>
+                </div>
+                <div class="card-desc">
+                    <p>NEKOKINAKO Kinaki cat cosplay</p>
+
+                    <p>By - <span title="Ganyu cow">NEKOKINAKO</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Nekokoyoshi - Rem Xmas (Re Zero)/Nekokoyoshi.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Nekokoyoshi-xmas-(1).jpg" alt="Nekokoyoshi cosplay">
+                    <p class="card-title">Nekokoyoshi</p>
+                </div>
+                <div class="card-desc">
+                    <p>Nekokoyoshi - Rem Xmas (Re Zero) cosplay</p>
+
+                    <p>By - <span title="Ganyu cow">Nekokoyoshi</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web pic/Queenie Chuppy/Queenie Chuppy.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Queenie Chuppy (1).jpg" alt="Queenie Chuppy cosplay">
+                    <p class="card-title">Chuppy</p>
+                </div>
+                <div class="card-desc">
+                    <p>Queenie Chuppy cosplay</p>
+
+                    <p>By - <span title="Ganyu cow">Queenie Chuppy</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Riha/Riha.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Riha (1).jpg" alt=" Riha (리하) cosplay">
+                    <p class="card-title">Riha</p>
+                </div>
+                <div class="card-desc">
+                    <p> Riha (리하) cosplay</p>
+
+                    <p>By - <span title="Riha cosplay">Riha</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/yuzuki/yuxuki.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="yuzuki (25).jpg" alt="Yuzuki cosplay">
+                    <p class="card-title">Yuzuki</p>
+                </div>
+                <div class="card-desc">
+                    <p>Yuzuki cosplay</p>
+
+                    <p>By - <span title="Yuzuki">Yuzuki</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Yeha/Yeha.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Yeha (4).jpg" alt="Yeha cosplay">
+                    <p class="card-title">Yeha</p>
+                </div>
+                <div class="card-desc">
+                    <p>Yeha cosplay</p>
+
+                    <p>By - <span title="Yeha">Yeha</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Zia/Zia.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Zia (53).jpg" alt="Zia cosplay">
+                    <p class="card-title">Zia</p>
+                </div>
+                <div class="card-desc">
+                    <p>Zia cosplay</p>
+
+                    <p>By - <span title="Zia">Zia</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Yeeun/Yeeun.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Yeeun (48).jpg" alt="Yeeun cosplay">
+                    <p class="card-title">Yeeun</p>
+                </div>
+                <div class="card-desc">
+                    <p>Yeeun cosplay</p>
+
+                    <p>By - <span title="Yeeun">Yeeun</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Yeeun/Yeeun.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Yeeun (48).jpg" alt="Yeeun cosplay">
+                    <p class="card-title">Yeeun</p>
+                </div>
+                <div class="card-desc">
+                    <p>Yeeun cosplay</p>
+
+                    <p>By - <span title="Yeeun">Yeeun</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Somi/Somi.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Somi (1).jpg" alt="Somi cosplay">
+                    <p class="card-title">Somi</p>
+                </div>
+                <div class="card-desc">
+                    <p>Somi cosplay</p>
+
+                    <p>By - <span title="Yeeun">Somi</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/sonyeeun/Sonyeeun.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="sonyeeun (1).jpg" alt="sonyeeun cosplay">
+                    <p class="card-title">sonyeeun</p>
+                </div>
+                <div class="card-desc">
+                    <p>sonyeeun cosplay</p>
+
+                    <p>By - <span title="Yeeun">sonyeeun</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Sirius/Sirus.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Sirius (4).jpg" alt="Sirius cosplay">
+                    <p class="card-title">Sirius</p>
+                </div>
+                <div class="card-desc">
+                    <p>Sirius cosplay</p>
+
+                    <p>By - <span title="Yeeun">Sirius</span></p>
+                </div>
+            </div>
+        </a>
+
+        <a href="web%20pic/Nekokoyoshi___TiTi_-_Tianzhu_Girl/Nekokoyoshi.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Nekokoyoshi (102).jpg" alt="Nekokoyoshi cosplay">
+                    <p class="card-title" style="font-size: 20px;">Nekokoyoshi</p>
+                </div>
+                <div class="card-desc">
+                    <p>Nekokoyoshi___TiTi_-_Tianzhu_Girl cosplay</p>
+
+                    <p>By - <span title="Ganyu cow">Nekokoyoshi & Tianzhu</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="web%20pic/Nekokoyoshi - Ada Wong (Resident Evil)/Nekokoyoshi.html"> <!-- single pic -->
+            <div class="card">
+                <div class="card-set">
+                    <img src="Nekokoyoshi (1).jpg" alt="Nekokoyoshi cosplay">
+                    <p class="card-title">Nekokoyoshi</p>
+                </div>
+                <div class="card-desc">
+                    <p>Nekokoyoshi - Ada Wong (Resident Evil) cosplay</p>
+
+                    <p>By - <span title="Ganyu cow">Nekokoyoshi</span></p>
+                </div>
+            </div>
+
+            <a href="web%20pic/Liuwei%20Emperor%20Sauce/Liuwei.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="Liuwei (1).jpg" alt="Liuwei cosplay">
+                        <p class="card-title">Liuwei</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Liuwei cosplay</p>
+
+                        <p>By - <span title="Liuwei">Liuwei</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Myaron/Myaron.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="Myaron (1).jpg" alt="Myaron cosplay">
+                        <p class="card-title">Myaron</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Myaron cosplay</p>
+
+                        <p>By - <span title="Yeeun">Myaron</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/booty-queen/booty-queen.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="booty (1).jpg" alt="Booty Queen cosplay">
+                        <p class="card-title">Booty Queen</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Rabit cosplay</p>
+
+                        <p>By - <span title="Yeeun">Booty Queen</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/DJAWA Photo - Son Ye-Eun (손예은) - Drive My Car/Djawa.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="Djawa (2).jpg" alt="Somi cosplay">
+                        <p class="card-title">Djawa</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>DJAWA Photo - Son Ye-Eun (손예은) - Drive My Car cosplay</p>
+
+                        <p>By - <span title="Yeeun">Djawa</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Cherry_Crush_-_Link/Cherry-Crush.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="Cherry-Crush (1).jpg" alt="Cherry-Crush cosplay">
+                        <p class="card-title">Cherry-Crush</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Cherry-Crush link cosplay</p>
+
+                        <p>By - <span title="Yeeun">Cherry-Crush</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Cherry_Crush_-_Pikachu/Cheery-Crush.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="Cherry-crush-pikachu (1).jpg" alt="Cherry-Crush cosplay">
+                        <p class="card-title">Cherry-Crush</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Cherry-Crush pikachu cosplay</p>
+
+                        <p>By - <span title="Yeeun">Cherry-Crush</span></p>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+    </section> <!-- pic section ends -->
+
+    <!-- Footer starts here -->
+    <footer class="pad-main">
+        <div class="footer-section">
+            <h3 class="footer-title" title="0.0134 / 18-02-2023 09:27:26 / 95.216.69.87"> Company </h3>
+            <a href="/home/about" rel="nofollow">Vsit our video web</a><br>
+            <a href="/app">Mobile App</a><br>
+            <a href="/home/terms" rel="nofollow">Terms &amp; Privacy</a><br>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-title">Social</h3>
+            <a href="https://twitter.com/pdfdrive" target="_blank">Twitter</a><br>
+            <a href="https://www.facebook.com/profile.php?id=100090362476106" target="_blank">Facebook</a><br>
+            <a href="/donate">Donate ♥</a><br>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-title">Help</h3>
+            <a href="/home/contact" rel="nofollow">Contact us</a><br>
+            <a href="/home/contact" rel="nofollow">Feedback</a><br>
+            <a href="/home/dmca" rel="nofollow">DMCA &amp; Copyright</a><br>
+        </div>
+
+        <div class="footer-section" style="text-align: center;" id="footer-logo">
+            <a href="/">
+                <img src="/assets/img/logo-1.png.pagespeed.ce.5UNSDNAJsC.png" title="PDF Search Engine"
+                    alt="cosplay Search Engine" style="padding-top: 45px;" width="175" border="0">
+            </a>
+        </div>
+    </footer> <!-- Footer ends here -->
+
+
+    <script>
+        const para1 = document.getElementById('para1');
+        const para2 = document.getElementById('para2');
+
+
+        let sentence1 = "This is a website where you can find some sexy  high quality cosplay picture";
+        let sentence2 = "Enjoy this web";
+
+
+        let i = 0;
+        let gab1 = setInterval(() => {
+            para1.textContent += sentence1[i];
+            if (i === sentence1.length - 1) { clearInterval(gab1); }
+            i++;
+            if(i === sentence1.length - 1){
+                callBack()
+            }
+        }, 80);
+
+        function callBack() {
+            let j = 0;
+            let gab2 = setInterval(() => {
+                para2.textContent += sentence2[j];
+                if (j === sentence2.length - 1) { clearInterval(gab2); }
+                j++;
+            }, 100);
+        }
+
+
+    </script>
+</body>
+
+</html>

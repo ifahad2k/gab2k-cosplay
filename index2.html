@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sex hub</title>
+        <style>
+            body {
+                background: rgba(25, 25, 27, .9) url(1.jpg) no-repeat center/cover fixed;
+                margin: 0;
+                min-height: 100vh;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                font-size: 1.1rem;
+                font-family: cursive;
+            }
+            .para1{
+                text-align: center;
+                font-size: 30px;
+                color: rgb(255, 0, 0);
+            }
+            .para2{
+                text-align: center;
+                font-size: 30px;
+                color: rgb(255, 0, 0);
+            }
+            main {
+            flex-grow: 1;
+            }
+
+            .books{
+                display: flex;
+                gap: 1rem;
+                margin: 2rem 0;
+                flex-wrap: wrap;
+            }
+
+            .books a{
+                color: white;
+            }
+
+            .card {
+                padding: 1rem 1.5rem;
+                text-align: center;
+                width: 250px;
+                box-shadow: 0 0 2px white;
+            }
+
+            .card-set {
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid;
+                margin-bottom: 1rem;
+            }
+
+            .card img {
+                display: block;
+                width: 160px;
+                height: 236px;
+            }
+
+            .card-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin: 10px;
+                writing-mode: vertical-lr;
+                text-orientation: upright;
+                color: blue;
+            }
+
+            .card-title.sm{
+                font-size: 1.35rem;
+            }
+
+            .card-desc > * {
+                margin: 5px;
+                color: rgb(255, 1, 1);
+            }
+
+        .card-desc :first-child{
+            font-weight: bold;
+        }
+
+        .card span:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .header-toggle{
+            display: none;
+            cursor: pointer;
+            background-color: rgba(25, 25, 27, 0.768);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(25, 25, 27, 0.768);
+    
+
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 1.3rem;
+            padding-left: 0;
+        }
+
+        header a {
+            padding: .5rem 1rem;
+            border: 1px solid;
+        }
+        .search-div input {
+            display: inline-block;
+            padding: .5rem 1rem;
+            font-size: 1.1rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.62);
+        }
+        .search-div input:focus{
+            outline: transparent;
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .search-div button {
+            padding: .5rem 1rem;
+            border: none;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            background-color: rgba(17, 1, 1, 0.848);
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            background-color: rgba(0, 0, 0, 0.595);
+        }
+
+        footer a {
+            padding: .3rem 0;
+        }
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
+    
+        <!-- header starts here -->
+        <header id="header">
+            <div class="logo">
+                <a href="index2.html"><img src="logo.png" width="150"></a>
+                <div>
+                    <a href="index2.html" style="font-size: 30px;">Sex-Hub</a>
+                </div>
+                
+            </div>
+           
+            <ul>
+                <li style="background-color: rgba(17, 1, 1, 0.848);"><a href="index.html" style="color: gold;">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search-div">
+                <input type="text" placeholder="search" class="search">
+                <button>Search</button>
+            </div>
+    
+            <ul class="login-ul">
+                <li><a href="#" id="btn-login">Login</a></li>
+                <li><a href="#" id="btn-signUp">Sign-Up</a></li>
+            </ul>
+        </header> <!-- header ends here -->
+
+        <p id="para1" class="para1"></p>
+        <p id="para2" class="para2"></p>
+
+        <section class="books">
+            <a href="web%20pic/Ganyu/Ganyu.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="savannah-sixx.jpg"
+                            alt="Savannah-sixx nude pic">
+                        <p class="card-title">Savannah Sixx</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Savannah Sixx sex video HD</p>
+                        
+                        <p>By - <span title="Ganyu cow">Savannah Sixx</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Nekokoyoshi/Nekokoyoshi%20(2).html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="eva-elfie-nude.jpg"
+                            alt="eva-elfie nude pic">
+                        <p class="card-title">Eva-Elfie</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Eva-Elfie sex video hd</p>
+                        
+                        <p>By - <span title="Ganyu cow">Eva-Elfie</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web pic/Queenie Chuppy/Queenie Chuppy.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="kali-roses-nude.jpg"
+                            alt="kali-roses nude pic">
+                        <p class="card-title">Kali-Roses</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Kali-Roses sex video hd</p>
+                        
+                        <p>By - <span title="Ganyu cow">Kali-Roses</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Riha/Riha.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="Cara-may.jpg"
+                            alt=" Cara-May nude pic">
+                        <p class="card-title">Cara-May</p>
+                    </div>
+                    <div class="card-desc">
+                        <p> Cara-May sex video hd</p>
+                        
+                        <p>By - <span title="Riha cosplay">Cara-May</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/yuzuki/yuxuki.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="ellie eilish.jpg"
+                            alt="Ellie Eilish nude pic">
+                        <p class="card-title">Ellie Eilish</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Ellie Eilish sex video hd</p>
+                        
+                        <p>By - <span title="Yuzuki">Ellie Eilish</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Yeha/Yeha.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="sweetie-fox.jpg"
+                            alt="Sweetie-Fox nude pic">
+                        <p class="card-title">Sweetie-Fox</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Sweetie-Fox sex video hd</p>
+                        
+                        <p>By - <span title="Yeha">Sweetie-Fox</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Zia/Zia.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="marsha-may-nude.jpg"
+                            alt="Marsha-May">
+                        <p class="card-title">Marsha-May</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Marsha-May sex video hd</p>
+                        
+                        <p>By - <span title="Zia">Marsha-May</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Yeeun/Yeeun.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="mia-malkova-nude.jpg"
+                            alt="mia-malkova-nude">
+                        <p class="card-title">Mia-Malkova</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Mia-Malkova sex video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Mia-Malkova</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/sonyeeun/Sonyeeun.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="lana-rhoades-nude.jpg"
+                            alt="lana-rhoades-nude">
+                        <p class="card-title">Lana-Rhoades</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Lana-Rhoades se video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Lana-Rhoades</span></p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="web%20pic/Somi/Somi.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="leah-gotti-nude.jpg"
+                            alt="leah-gotti-nude">
+                        <p class="card-title">Leah-Gotti</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Leah-Gotti sex video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Leah-Gotti</span></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="web%20pic/booty-queen/booty-queen.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="kenzie-reeves-nude.jpg"
+                            alt="kenzie-reeves-nude">
+                        <p class="card-title">Kenzie-Reeves</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Kenzie-Reeves sex video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Kenzie-Reeves</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Yeeun/Yeeun.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="Octokuro_2Dicks_for_2B.jpg"
+                            alt="Octokuro pic">
+                        <p class="card-title">Octokuro</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Octokuro 2B cosplay sec video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Octokuro</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Sirius/Sirus.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="mandy-muse.jpg"
+                            alt="mandy-muse sex">
+                        <p class="card-title">Mandy-Muse</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Mandy-Muse sex video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Mandy-Muse</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Liuwei%20Emperor%20Sauce/Liuwei.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="aj-applegate-nude.jpg"
+                            alt="aj-applegate-nude">
+                        <p class="card-title">Aj-Applegate</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Aj-Applegate sex video hd</p>
+                        
+                        <p>By - <span title="Liuwei">Aj-Applegate</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/Myaron/Myaron.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="Natasha-Nice-Nude.jpg"
+                            alt="Natasha-Nice-Nude">
+                        <p class="card-title">Natasha-Nice</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Natasha-Nice-Nude sex video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Natasha-Nice</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/booty-queen/booty-queen.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="abella-danger-nude.jpg"
+                            alt="abella-danger-nude">
+                        <p class="card-title">Abella-Danger</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Abella-Danger sex video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Abella-Danger</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/booty-queen/booty-queen.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="monique-alexander-nude.jpg"
+                            alt="monique-alexander-nude">
+                        <p class="card-title">Monique-Alexander</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Monique-Alexander sex video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Monique-Alexander</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/booty-queen/booty-queen.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="nicolette-shea-naked.jpg"
+                            alt="nicolette-shea-nude">
+                        <p class="card-title">Nicolette-Shea</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Nicolette-Shea sex video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Nicolette-Shea</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/booty-queen/booty-queen.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="lena-paul-nude.jpg"
+                            alt="lena-paul-nude">
+                        <p class="card-title">Lena-Paul</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Lena-Paul sex video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Lena-Paul</span></p>
+                    </div>
+                </div>
+            </a>
+            <a href="web%20pic/booty-queen/booty-queen.html"> <!-- single pic -->
+                <div class="card">
+                    <div class="card-set">
+                        <img src="raven-bay-topless.jpg"
+                            alt="raven-bay-nude">
+                        <p class="card-title">Raven-Bay</p>
+                    </div>
+                    <div class="card-desc">
+                        <p>Raven-Bay sex video hd</p>
+                        
+                        <p>By - <span title="Yeeun">Raven-Bay</span></p>
+                    </div>
+                </div>
+            </a>
+
+
+            
+        </section> <!-- pic section ends -->
+
+  <!-- Footer starts here -->
+  <footer class="pad-main">
+    <div class="footer-section">
+        <h3 class="footer-title" title="0.0134 / 18-02-2023 09:27:26 / 95.216.69.87"> Company </h3>
+        <a href="/home/about" rel="nofollow">Vsit our cosplay photo website</a><br>
+        <a href="/app">Mobile App</a><br>
+        <a href="/home/terms" rel="nofollow">Terms &amp; Privacy</a><br>
+    </div>
+
+    <div class="footer-section">
+        <h3 class="footer-title">Social</h3>
+        <a href="https://twitter.com/pdfdrive" target="_blank">Twitter</a><br>
+        <a href="https://www.facebook.com/profile.php?id=100090362476106" target="_blank">Facebook</a><br>
+        <a href="/donate">Donate ♥</a><br>
+    </div>
+
+    <div class="footer-section">
+        <h3 class="footer-title">Help</h3>
+        <a href="/home/contact" rel="nofollow">Contact us</a><br>
+        <a href="/home/contact" rel="nofollow">Feedback</a><br>
+        <a href="/home/dmca" rel="nofollow">DMCA &amp; Copyright</a><br>
+    </div>
+
+    <div class="footer-section" style="text-align: center;" id="footer-logo">
+        <a href="/">
+            <img src="/assets/img/logo-1.png.pagespeed.ce.5UNSDNAJsC.png" title="PDF Search Engine"
+                alt="cosplay Search Engine" style="padding-top: 45px;" width="175" border="0">
+        </a>
+    </div>
+    </footer> <!-- Footer ends here -->
+
+
+        <script>
+            const para1 = document.getElementById('para1');
+            const para2 = document.getElementById('para2');
+            
+
+            let sentence1 = "This is a website where you can find best porn video ever made";
+            let sentence2 = "Enjoy this website";
+            
+
+            let i = 0;
+            let gab1 = setInterval(() => {
+                para1.textContent += sentence1[i];
+                if (i === sentence1.length - 1) { clearInterval(gab1); }
+                i++;
+            }, 80);
+            let j = 0;
+            let gab2 = setInterval(() => {
+                para2.textContent += sentence2[j];
+                if (j === sentence2.length - 1) { clearInterval(gab2); }
+                j++;
+            }, 100);
+
+
+        </script>
+    </body>
+</html>
